@@ -1,0 +1,14 @@
+
+<html>
+<body>
+    <h2>Sales Data Clustering</h2>
+    <form method="post">
+        Monthly Sales: <input name="sales"><br>
+        Product Price: <input name="price"><br>
+        <button type="submit">Cluster</button>
+    </form>
+    {% if cluster is not none %}
+        <h3>Sales Cluster: {{ cluster }}</h3>
+    {% endif %}
+</body>
+</html>

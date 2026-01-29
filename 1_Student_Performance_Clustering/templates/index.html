@@ -1,0 +1,15 @@
+
+<html>
+<body>
+    <h2>Student Performance Clustering</h2>
+    <form method="post">
+        Study Hours: <input name="hours"><br>
+        Attendance %: <input name="attendance"><br>
+        Marks: <input name="marks"><br>
+        <button type="submit">Cluster</button>
+    </form>
+    {% if cluster is not none %}
+        <h3>Student belongs to Cluster: {{ cluster }}</h3>
+    {% endif %}
+</body>
+</html>

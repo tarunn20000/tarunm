@@ -1,0 +1,14 @@
+
+<html>
+<body>
+    <h2>User Activity Clustering</h2>
+    <form method="post">
+        Time Spent (hrs): <input name="time"><br>
+        Pages Visited: <input name="pages"><br>
+        <button type="submit">Analyze</button>
+    </form>
+    {% if cluster is not none %}
+        <h3>User Group: {{ cluster }}</h3>
+    {% endif %}
+</body>
+</html>

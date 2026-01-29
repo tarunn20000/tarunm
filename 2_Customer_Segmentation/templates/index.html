@@ -1,0 +1,14 @@
+
+<html>
+<body>
+    <h2>Customer Segmentation</h2>
+    <form method="post">
+        Income: <input name="income"><br>
+        Spending Score: <input name="score"><br>
+        <button type="submit">Segment</button>
+    </form>
+    {% if cluster is not none %}
+        <h3>Customer Cluster: {{ cluster }}</h3>
+    {% endif %}
+</body>
+</html>
